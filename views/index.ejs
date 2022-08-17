@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>MarkDown</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h2>Articles</h2>
+    <% articles.forEach(article=>{%>
+        <div class="card">
+            <h3>
+                <%=article.title%>
+            </h3>
+            <p style="font-size:14px;">
+                <%= new Date(article.date).toLocaleString()%>
+
+            </p>
+            <p>
+                <%=article.body%>
+            </p>
+            <p style="text-align:end;margin-top: 20px;">
+                <%=article.author_name%>
+            </p>
+            <div class="options">
+                <a class="links" href=<%='/articles/' + article.id %> >View</a>
+
+                <form action=<%='/articles/delete/' + article.id %>>
+                    <input type="submit" name="" id="" value="Delete">
+                </form>
+
+            </div>
+
+        </div>
+
+        <% })%>
+            <a href="/articles/new" class="links">Add Blog</a>
+
+</body>
+
+</html>

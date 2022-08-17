@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="details">
+
+        <h1>
+            <%=article.title%>
+        </h1>
+
+        <div>
+
+
+            <h3>
+                <%=article.author_name%>
+            </h3>
+
+            <p style="font-size:14px;">
+                <%= new Date(article.date).toLocaleString()%>
+
+            </p>
+
+            <p>
+                <%=article.body%>
+            </p>
+        </div>
+        <a href=<%= '/articles/edit/'+article.id %> class="links">Edit Post</a>
+    </div>
+
+</body>
+
+</html>

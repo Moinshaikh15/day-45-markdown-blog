@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(226, 225, 225);
+    box-shadow: 1px 1px 5px grey;
+}
+
+.new-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+    width: 70%;
+}
+
+.form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.form-field input {
+    width: 75%;
+    padding: 5px;
+}
+
+.form-field textarea {
+    width: 75%;
+    padding: 5px;
+}
+
+.btn input {
+    width: 100%;
+    background-color: rgb(82, 82, 141);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.details h1 {
+    text-align: center;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.options input {
+    border: none;
+    color: red;
+    border-radius: 4px;
+    padding: 4px 10px;
+    box-shadow: 1px 1px 2px gray;
+    background-color: white;
+}
+.options input:hover{
+    color: white;
+    background-color: rgb(230, 48, 48);
+}
+
+
+.links {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 4px 10px;
+    box-shadow: 1px 1px 2px gray;
+    text-decoration: none;
+    background-color: white;
+
+}
+.links:hover{
+    background-color: rgb(80, 80, 189);
+    color: white;
+}
+
+.edit{
+    width: 100%;
+}
